@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice with nav bar and div </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            /* border:1px solid blue; */
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: rgb(146, 103, 189);
+
+        }
+
+        /* .left{
+    border: 1px solid yellow;
+} */
+        .left ul {
+            /* border:1px solid grey; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 10vh;
+            width: 29rem;
+
+        }
+
+        .left ul li {
+            list-style: none;
+            font-size: 1.5rem;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0.5rem;
+        }
+
+        .left ul li:hover {
+            color: greenyellow;
+            cursor: pointer;
+
+        }
+
+        .right {
+            /* border: 1px solid rebeccapurple; */
+        }
+
+        .right ul {
+            /* border:1px solid pink; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 20rem;
+            height: 10vh;
+        }
+
+        .right ul li {
+            list-style: none;
+            font-size: 1.5rem;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0.5rem;
+        }
+
+        .right ul li:hover {
+            color: red;
+            cursor: pointer;
+
+        }
+
+        .border {
+            font-weight: 100;
+            border: 3px dashed black;
+            padding: 0.5rem;
+        }
+
+        .section {
+            height: 90vh;
+            /* border: 1px solid purple; */
+            background-color: rgb(122, 199, 122);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px;
+            margin-left: 20px;
+
+        }
+
+        .left1 {
+
+            /* border: 1px solid red; */
+            width: 50%;
+            height: 90vh;
+        }
+
+        .left1 {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left1 img {
+
+
+            height: 500px;
+            width: 500px;
+            rotate: -20deg;
+        }
+
+        /* 
+        h1 {
+            position: relative;
+            left: 50px;
+        }
+
+        p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+            position: relative;
+            left: 50px;
+
+        } */
+        .right1 {
+            margin-top: 10rem;
+            font-size: 0.5rem;
+
+            width: 50%;
+
+
+        }
+
+        button {
+            color: greenyellow;
+            background-color: whitesmoke;
+            font-size: 0.8rem;
+            margin: 1rem;
+            padding: 0.3em;
+            cursor: pointer;
+
+
+
+        }
+
+        button:hover {
+            color: red;
+
+        }
+
+        .text {
+            font-size: 1rem;
+        }
+        .para{font-size:0.9rem;}
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="left">
+            <ul>
+                <li class="border">solyent</li>
+                <li>drink</li>
+                <li>cafe</li>
+                <li>powder</li>
+                <li>All Products</li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li>Login</li>
+                <li>Refer</li>
+                <li>Cart</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section">
+        <marquee direction="left" onmouseover="stop()" onmouseout="start()">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id pariatur, ex natus debitis saepe hic!</p>
+        </marquee>
+        <div class="left1">
+
+            <img src="/progrms/images/—Pngtree—spray bottle cosmetic mockup_6716763.png" height="60%" width="60%">
+
+
+        </div>
+        <div class="right1">
+            <h1 class="text">fruit is back</h1>
+            <p  class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium quo repellendus
+                assumenda animi nihil labore voluptate, nostrum esse molestias illo repudiandae magnam consequuntur sunt
+                et doloribus ipsum dolorum, modi placeat. Sequi, eaque reprehenderit! Saepe neque reprehenderit
+                aspernatur sequi quia culpa, eum ipsum quisquam placeat necessitatibus modi illum recusandae commodi.
+                Sunt magnam tempore eligendi distinctio similique dolore maxime corrupti eum a quaerat, sequi reiciendis
+                dignissimos nemo, molestias obcaecati, autem quos. Cumque placeat vitae, velit reprehenderit, inventore
+                quod rem, unde ab soluta quaerat veritatis. Voluptatem obcaecati quae aspernatur eveniet ullam eaque
+                quis saepe, animi maiores delectus minus a quibusdam veritatis atque!</p>
+            <button>shop now</button>
+        </div>
+    </div>
+</body>
+
+</html>
